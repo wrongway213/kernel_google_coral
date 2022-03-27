@@ -6,10 +6,10 @@
 # function. Nothing will happen if you execute it.
 #
 
-BUILD_DIR="/home/kuran"
+BUILD_DIR="/home/wrongway/data"
 
 # Path to executables in Clang toolchain
-clang_bin="$BUILD_DIR/android/linux-x86/clang-r399163b/bin"
+clang_bin="$BUILD_DIR/android/linux-x86/clang-r399163b/bin/"
 
 # 64-bit GCC toolchain prefix
 gcc_prefix64="$BUILD_DIR/android/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
@@ -56,4 +56,5 @@ kmake_flags+=(
 
 	KBUILD_COMPILER_STRING="$(get_clang_version clang)"
 )
+
 
